@@ -11,5 +11,5 @@ $query->execute([
 
 $poisson = $query->fetch();
 
-render("poisson/show",["pageTitle"=>"ShowMore","poisson"=>$poisson]);
+render("poisson/show",["pageTitle"=>$poisson['name'],"poisson"=>$poisson]);
 
